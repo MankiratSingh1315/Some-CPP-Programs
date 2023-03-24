@@ -1,6 +1,5 @@
-// program to check if a number is prime or not
 #include <iostream>
-#include<math.h>
+#include <math.h>
 using namespace std;
 
 bool isPrime(int n)
@@ -16,22 +15,20 @@ bool isPrime(int n)
 			return false;
 		}
 	}
-	
+
 	return true; // this function returns true if given number is a prime number.
 }
 
-int main()
+void printPrime(int n)
 {
-	int n;
-	cout << "Enter a number : ";
-	cin >> n;
+    for (int i = 2; i <= n; i++)
+    {
+        if (isPrime(i)){
+            cout<<i<<"\n";
+        }
+    }
+}
 
-	if (isPrime(n))
-	{
-		cout << n << " is a prime number";
-	}
-	else
-	{
-		cout << n << " is not a prime number";
-	}
+int main(){
+    printPrime(150);
 }
