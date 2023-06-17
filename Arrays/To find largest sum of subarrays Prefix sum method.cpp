@@ -13,17 +13,19 @@ int LargestSumOfSubarrayPrefixSumMethod(int arr[],int size){
 	for(int i=0;i<size;i++){
 		for(int j=i;j<size;j++){
 			int sum = i==0 ? prefixArr[j] : prefixArr[j]-prefixArr[i-1];
+			cout<<sum<<"\t";
 			if(largest < sum){
 				largest=sum;
 			}
 		}
+		cout<<"\n";
 	}
 
 	return largest;
 }
 
 int main(){
-	int arr[]={2,4,6,8,10};
+	int arr[]={2,4,-6,8,-10};
 	int N=sizeof(arr)/sizeof(arr[0]);
-	cout<<LargestSumOfSubarrayPrefixSumMethod(arr,N);
+	cout<<"\nLargest is "<<LargestSumOfSubarrayPrefixSumMethod(arr,N);
 }
