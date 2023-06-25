@@ -27,7 +27,7 @@ int kadanesForNegative(int arr[],int size){
     return max;
 }
 
-int main(){
+int main(){ 
 	int arr[]={2,4,-6,8,-10};
 	int N=sizeof(arr)/sizeof(arr[0]);
 	cout<<"\nLargest is "<<kadanes(arr,N);
