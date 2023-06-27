@@ -35,4 +35,4 @@ int main(){
     int arr2[]={-2,-4,-6,-8,-10};
 	N=sizeof(arr2)/sizeof(arr2[0]);
 	cout<<"\nLargest is "<<kadanesForNegative(arr2,N);
-}
+}  
