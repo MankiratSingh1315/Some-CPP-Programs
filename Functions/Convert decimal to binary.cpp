@@ -16,3 +16,5 @@ int binary(int n){
 int main(){
     cout<<binary(13);
 }
+
+
